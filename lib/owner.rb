@@ -46,11 +46,11 @@ class Owner
     @pets[:dogs][:mood] = "happy"
   end  
   
-  def play_with_cats(name)
+  def play_with_cats
     @pets[:cats][:mood] = "happy"
   end 
   
-  def feed_fish(name) 
+  def feed_fish
     @pets[:fish][:mood] = "happy"
   end 
   
