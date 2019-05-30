@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   attr_accessor :name, :fish, :dog, :cat, :pets
   attr_reader :species
