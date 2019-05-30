@@ -58,13 +58,13 @@ class Owner
   
   def sell_pets 
     @pets.each {|pet| pet.mood = "nervous"}
-    @pets.clear 
+    #@pets.clear 
   end 
   
   def list_pets 
-    puts @pets[:fishes].keys
-    puts @pets[:dogs].keys
-    puts @pets[:cats].keys
+    puts @pets[:fishes]
+    puts @pets[:dogs]
+    puts @pets[:cats]
   end   
   
 end
