@@ -8,7 +8,7 @@ class Owner
   def initialize(name)
     @name = name
     @species = "human"
-    @pets = {:fishes => "", :dogs => "", :cats => ""}
+    @pets = {:fishes => [], :dogs => [], :cats => []}
     @@all << self
   end  
   
@@ -45,7 +45,7 @@ class Owner
   
   def walk_dogs
     #binding.pry
-    @pets[:dogs].mood = "happy"
+    @pets[:dogs].flatten.mood = "happy"
   end  
   
   def play_with_cats
